@@ -1,3 +1,4 @@
+BASE_MODEL_ID = "HuggingFaceTB/SmolLM2-360M"
 MODEL_ID = r"C:\Users\citak\Desktop\LLMS\Bank_QA\tuned_models_SmolLM2\bank_qa_base_tune_peft-2025_02_25_22_13_1e-3_expanded\checkpoint-1440"
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 VECTOR_STORE_PATH = "vectorstore/faiss_index"

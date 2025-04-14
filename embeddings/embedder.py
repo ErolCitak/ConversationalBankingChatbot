@@ -7,7 +7,6 @@ from langchain_community.embeddings import HuggingFaceEmbeddings # type: ignore
 from langchain_community.vectorstores import FAISS # type: ignore
 from langchain.docstore.document import Document # type: ignore
 
-
 import warnings
 warnings.filterwarnings('ignore')
 

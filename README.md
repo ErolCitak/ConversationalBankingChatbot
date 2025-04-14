@@ -3,21 +3,21 @@
   
 ConversationalBankingChatbot/  
 │  
-├── main.ipynb                   # Ana giriş noktası (Chat/QA başlatıcı)  
-├── config.py                    # Model, dosya yolu, ayarlar  
-├── logging_utils.py             # Loglama, zaman tutucu, helper fonksiyonlar  
+├── main.ipynb                   # Main Entrance  
+├── config.py                    # Some constants definitions about the LLM Model, Dataset, Embedder, etc.  
+├── logging_utils.py             # Logging Utilities  
 │  
 ├── data/  
-│   └── prepare_data.py          # Dataset yükleme ve LangChain'e uygun hâle getirme  
+│   └── prepare_data.py          # Download, load, and making ready for LangChain Document  
 │  
 ├── embeddings/  
-│   └── embedder.py              # Embedding modeli ve vector store hazırlama  
+│   └── embedder.py              # Initializing embedder and creation of VectorStore  
 │  
 ├── llm/  
-│   └── smollm_wrapper.py        # SmolLM2 modelini LangChain LLM'e saran sınıf  
+│   └── smollm_wrapper.py        # LangChain LLM of previously pre-trained SmolLM2 (our model)  
 │  
 ├── chains/  
-│   └── rag_chain.py             # RetrievalQA zinciri burada kuruluyor  
+│   └── rag_chain.py             # Chain of Retrieval Augmented Generation initialization  
 │  
 ├── interface/  
-│   └── gradio_ui.py             # Gradio, Streamlit ya da FastAPI arayüzü  
+│   └── gradio_ui.py             # Gradio, Streamlit or FastAPI interface  
