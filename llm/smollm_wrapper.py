@@ -33,7 +33,7 @@ class SmolLLMWrapper:
         self.tuned_model.eval();
 
         # Create a pipeline
-        self.pipe = pipeline("text-generation", model=self.tuned_model, tokenizer=self.base_tokenizer, max_length=max_length, temperature=temperature, top_p=top_p, top_k=top_k,
+        self.pipe = pipeline("text-generation", model=self.tuned_model, tokenizer=self.base_tokenizer, max_new_tokens=max_length, temperature=temperature, top_p=top_p, top_k=top_k,
                          repetition_penalty=repetition_penalty, do_sample=do_sample, truncation=truncation, device=self.my_device)
         
         self.llm = HuggingFacePipeline(pipeline=self.pipe)
