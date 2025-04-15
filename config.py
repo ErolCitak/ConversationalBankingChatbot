@@ -3,3 +3,4 @@ MODEL_ID = r"C:\Users\citak\Desktop\LLMS\Bank_QA\tuned_models_SmolLM2\bank_qa_ba
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 VECTOR_STORE_PATH = "vectorstore/faiss_index"
 DATASET_NAME = "GhulamShabbirKhan/BankFAQsMistral"
+SYN_QUESTIONS = "test_questions_variations.txt"

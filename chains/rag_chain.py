@@ -41,5 +41,5 @@ class RAGChainBuilder:
             llm=self.llm,
             retriever=self.retriever,
             chain_type="stuff",
-            chain_type_kwargs={"prompt": self.prompt_template}
+            #chain_type_kwargs={"prompt": self.prompt_template}
         )
